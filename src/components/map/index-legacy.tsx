@@ -25,8 +25,8 @@ const Map = () => {
       <primitive object={new THREE.AxesHelper(100)} />
       <ambientLight intensity={0.7} />
       <Physics>
-        {plots.map(({ position, size }) => (
-          <Box position={position} size={size} />
+        {plots.map(({ position, size }, index) => (
+          <Box key={index} position={position} size={size} />
         ))}
       </Physics>
       <Plane />
