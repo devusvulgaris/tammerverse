@@ -6,9 +6,7 @@ type Props = {}
 
 const CityMap = (props: Props) => {
   return (
-    <div>
       <Map />
-    </div>
   )
 }
 
