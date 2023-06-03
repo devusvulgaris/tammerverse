@@ -13,7 +13,7 @@ const Railways = (props: Props) => {
   useEffect(() => {
     (async () => {
       const data = await loadGeoJson({ type: 'railways' })
-      console.log('park data', data)
+      console.log('railways data', data)
 
       const { water, buildings, buildingsShapes, roads, greenArray, railwaysArray, railwaysPoints } = await generateObjects(data)
       // console.log('buildingsShapes', buildingsShapes)
@@ -37,20 +37,14 @@ const Railways = (props: Props) => {
     }
   }, [railways])
 
-  // console.log('railwaysPoints', railwaysPoints)
+  console.log('railwaysGeometry', railwaysGeometry)
 
   return (
-    <>
-    {railways.forEach(railway => (
-      <line geometry={railway}>
-         <lineBasicMaterial color="orange" attach="material" />
-      </line>
-    ))}
-    </>
-    // <lineSegments>
-    //   <bufferGeometry attach="geometry" args={[railwaysGeometry]} />
-    //   <lineBasicMaterial color="orange" attach="material" />
-    // </lineSegments>
+
+    <lineSegments>
+      <bufferGeometry attach="geometry" args={[railwaysGeometry]} />
+      <lineBasicMaterial color="orange" attach="material" />
+    </lineSegments>
     // <Line
     // points={railwaysPoints}
     // segments

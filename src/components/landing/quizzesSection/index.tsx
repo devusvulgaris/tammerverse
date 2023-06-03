@@ -11,8 +11,8 @@ type Props = {}
 
 const QuizzesSection = (props: Props) => {
   return (
-    <Box width='100%' bgColor="blackAlpha.900" color="white" py={[4, 5]}>
-      <Container textAlign="center" maxW="container.xl">
+    <Box fontSize="xl" width='100%' bgColor="blackAlpha.900" color="white" py={[4, 5]}>
+      <Container textAlign="center" maxW="container.lg">
         <Heading
           bgGradient='linear(to-r, #cc2b5e, #753a88)'
           bgClip="text"

@@ -134,7 +134,6 @@ const Map = () => {
   // console.log('my shape', shape)
 
   return (
-    <div style={{ width: '100%', height: '100vh' }}>
       <Canvas camera={{
         position: [-90, 0, 50],
         up: [0, 0, 10], // [0, 0, 10],
@@ -193,7 +192,7 @@ const Map = () => {
         <Parks />
         <Buildings />
         <Railways />
-        <Roads />
+        {/* <Roads /> */}
         <Plane />
         <MapControls
           // minPolarAngle={0}
@@ -201,7 +200,6 @@ const Map = () => {
           />
         {/* <FirstPersonControls /> */}
       </Canvas>
-    </div>
   )
 }
 

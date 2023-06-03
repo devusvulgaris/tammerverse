@@ -29,7 +29,7 @@ const Roads = (props: Props) => {
 
   const roadsGeometry = useMemo(() => {
     if (roads.length) {
-      roads.length = 10
+      // roads.length = 10
       console.log('roads geom===>', roads)
       const roadsGeom = mergeGeometries(roads.filter(Boolean), true)
 
@@ -43,17 +43,17 @@ const Roads = (props: Props) => {
 
 
   return (
-    null
-    // <>
-    //           {roads
-    //       .filter(Boolean)
-    //       .map((road, index) => (
-    //         <line key={index} geometry={road}>
-    //           {/* <bufferGeometry args={road} /> */}
-    //           <lineBasicMaterial color="#000000" linewidth={2} transparent={true} />
-    //         </line>
-    //       ))
-    //       }</>
+
+    <>
+              {roads
+          .filter(Boolean)
+          .map((road, index) => (
+            <line key={index} geometry={road}>
+              {/* <bufferGeometry args={road} /> */}
+              <lineBasicMaterial color="#000000" linewidth={2} transparent={true} />
+            </line>
+          ))
+          }</>
     // <lineSegments geometry={roadsGeometry}>
     //   {/* <bufferGeometry attach="geometry" args={roadPoints} /> */}
     //   <lineBasicMaterial color="#000000" attach="material" />

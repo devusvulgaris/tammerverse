@@ -18,7 +18,7 @@ const teamData = [
       {
         id: 'linkedin',
         icon: faLinkedin,
-        href: 'https://linkedin.com/in/'
+        href: 'https://www.linkedin.com/in/olegelizarov'
       },
       {
         id: 'email',
@@ -36,7 +36,7 @@ const teamData = [
       {
         id: 'linkedin',
         icon: faLinkedin,
-        href: 'https://linkedin.com/in/'
+        href: 'https://www.linkedin.com/in/devontay-cross'
       },
       {
         id: 'email',

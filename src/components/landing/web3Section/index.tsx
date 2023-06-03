@@ -2,13 +2,13 @@
 import React from 'react'
 import { Grid, Heading, Text, Box, Container, GridItem } from '@chakra-ui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faBrain, faVrCardboard } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faBrain, faVrCardboard, faImage } from '@fortawesome/free-solid-svg-icons'
 
 type Props = {}
 
 const Web3Section = (props: Props) => {
   return (
-    <Box width='100%' bgColor="blackAlpha.900" color="white" py={[4, 5]}>
+    <Box fontSize='xl' width='100%' bgColor="blackAlpha.900" color="white" py={[4, 5]}>
       <Container textAlign="center">
         {/* <Text
   bgGradient='linear(to-l, #7928CA, #FF0080)'
@@ -28,6 +28,10 @@ const Web3Section = (props: Props) => {
           <GridItem textAlign="center">
             <Text mb={2}>Artificial intelligence</Text>
             <FontAwesomeIcon size='3x' icon={faBrain} />
+          </GridItem>
+          <GridItem textAlign="center">
+            <Text mb={2}>NFT based transparense</Text>
+            <FontAwesomeIcon size='3x' icon={faImage} />
           </GridItem>
         </Grid>
       </Container>

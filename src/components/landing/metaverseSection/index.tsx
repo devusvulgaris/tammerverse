@@ -11,29 +11,29 @@ type Props = {}
 
 const MetaverseSection = (props: Props) => {
   return (
-    <Box width='100%' bgColor="blackAlpha.900" color="white" py={[4, 5]}>
-      <Container textAlign="center" maxW="container.xl">
+    <Box width='100%' bgColor="blackAlpha.900" color="white" py={[5, 6]}>
+      <Container textAlign="center" maxW="container.lg">
         <Heading
           bgGradient='linear(to-r, #cc2b5e, #753a88)'
           bgClip="text"
           fontWeight="bold"
           fontSize='5xl'
-          mb={[2, 3]}
+          mb={[5, 6]}
         >
           Metaverse
         </Heading>
         <Box mb={4}>
-          <FontAwesomeIcon icon={faVrCardboard} />
-          <Text>
+          <FontAwesomeIcon size='2x' icon={faVrCardboard} />
+          <Text fontSize='xl' mt={5}>
             Immersive 3D map of Tampere city with provided manufacturing companies and presented industries.
           </Text>
-          <Text>
+          <Text fontSize='xl'>
             Partner companies can select scene or mini game relevant to their technology and place it on the map.
 
             App visitors are able to explore loaded scenes and learn about the industry in the new way.
           </Text>
         </Box>
-        <Button as={Link} href='/metaverse' color="white" bgGradient='linear(to-r, #cc2b5e, #753a88)'>Enter</Button>
+        <Button fontSize='xl' as={Link} href='/metaverse' color="white" bgGradient='linear(to-r, #cc2b5e, #753a88)'>Enter</Button>
       </Container>
     </Box>
   )

@@ -5,9 +5,7 @@ type Props = {}
 
 const ScenePage = (props: Props) => {
   return (
-    <div>
-      <Scene />
-    </div>
+    <Scene />
   )
 }
 

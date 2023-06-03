@@ -13,9 +13,9 @@ export default function Home() {
     <main>
       <HeroSection />
       <Web3Section />
+      <ProjectSection />
       <WhySection />
       <TeamSection />
-      <ProjectSection />
       <QuizzesSection />
       <LandingContent />
     </main>
