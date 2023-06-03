@@ -128,8 +128,9 @@ function generateRoad(coordinates, height = 0) {
 			let coords = normalizeCoordinates(coordinates, CITY_CENTER_COORDS);
 			// points.push(new THREE.Vector3(coords[0], height, coords[1])); //old way
 			points.push(coords[0], coords[1], height)
-      vertices = new Float32Array(points)
 		});
+
+    vertices = new Float32Array(points)
 
 		// NEW WAY
 		let geometry = new BufferGeometry()
