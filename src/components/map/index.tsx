@@ -16,6 +16,7 @@ import Railways from '@/components/map/railways'
 import Roads from '@/components/map/roads'
 import Outotec from '@/components/map/outotec'
 import {InfoModal} from '@/components/map/info'
+import {Box }  from '@chakra-ui/react'
 
 type Props = {
   children: ReactNode
@@ -136,7 +137,7 @@ const Map = () => {
   // console.log('my shape', shape)
 
   return (
-    <>
+    <Box minH="80vh" height="100%">
     <InfoModal />
       <Canvas camera={{
         position: [-90, 0, 50],
@@ -204,7 +205,7 @@ const Map = () => {
           />
         {/* <FirstPersonControls /> */}
       </Canvas>
-      </>
+      </Box>
   )
 }
 
