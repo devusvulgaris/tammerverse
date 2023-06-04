@@ -36,10 +36,10 @@ const HeroSection = (props: Props) => {
             fontWeight="bold" fontSize='5xl' mb={[2, 3]}>
             Welcome to Tammerverse
           </Heading>
-          <Text color="white" mb={[3, 4]}>
+          <Text fontSize="2xl" color="white" mb={[5, 6]}>
             Immersive metaverse of Tampere industrial fields
           </Text>
-          <Button as={Link} href='/metaverse' color="white" bgGradient='linear(to-r, #cc2b5e, #753a88)'>Enter</Button>
+          <Button fontSize="2xl" as={Link} href='/metaverse' color="white" bgGradient='linear(to-r, #cc2b5e, #753a88)'>Enter</Button>
           {/* <Text mb={3}>Tammerverse uses best of web 3 technologies for immersive and transparent experience</Text>
         <Grid gridTemplateColumns="1fr 1fr 1fr">
           <GridItem textAlign="center">

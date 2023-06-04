@@ -66,8 +66,8 @@ const TeamSection = (props: Props) => {
               <Box borderRadius='50%' maxW={300} overflow='hidden' position='relative' width="100%" minHeight='200px' aspectRatio={1} filter="grayscale(100%)" margin='0 auto 2rem'>
                 <Image src={imageSrc} alt={name} fill />
               </Box>
-              <Text mb={2} fontSize="2xl">{name}</Text>
-              <Text mb={2}>{description}</Text>
+              <Text mb={4} fontSize="3xl">{name}</Text>
+              <Text fontSize="xl" mb={2}>{description}</Text>
               <Flex gap={3} justifyContent="center">
                 {contacts.map(({ id, href, icon }) => (
                   <Link key={id} href={href} target='_blank'>

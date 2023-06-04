@@ -22,16 +22,16 @@ const Web3Section = (props: Props) => {
         <Text mb={3}>Tammerverse uses best of web 3 technologies for immersive and transparent experience</Text>
         <Grid gridTemplateColumns="1fr 1fr 1fr">
           <GridItem textAlign="center">
-            <Text mb={2}>Metaverse</Text>
             <FontAwesomeIcon size='3x' icon={faVrCardboard} />
+            <Text my={4}>Metaverse</Text>
           </GridItem>
           <GridItem textAlign="center">
-            <Text mb={2}>Artificial intelligence</Text>
-            <FontAwesomeIcon size='3x' icon={faBrain} />
+          <FontAwesomeIcon size='3x' icon={faBrain} />
+            <Text my={4}>Artificial intelligence</Text>
           </GridItem>
-          <GridItem textAlign="center">
-            <Text mb={2}>NFT based transparense</Text>
+          <GridItem textAlign="center">    
             <FontAwesomeIcon size='3x' icon={faImage} />
+            <Text my={4}>NFT based transparense</Text>
           </GridItem>
         </Grid>
       </Container>
