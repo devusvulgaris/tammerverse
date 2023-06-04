@@ -40,11 +40,17 @@ export function generateShape(polygon) {
 
   Array.isArray(polygon) && polygon?.forEach((coordinates, index) => {
     const coords = normalizeCoordinates(coordinates, CITY_CENTER_COORDS)
+    // if (coords[0] < -100) {
+    //   console.log('coords[0]', coords[0])
+    // }
 
+    // if (coords[1] < -100) {
+    //   console.log('coords[1]', coords[1])
+    // }
     if (index === 0) {
-      shape.moveTo(coords[0], coords[1])
+      shape.moveTo(Math.min(coords[0], 50), Math.min(coords[1], 100))
     } else {
-      shape.lineTo(coords[0], coords[1])
+      shape.lineTo(Math.min(coords[0], 50), Math.min(coords[1], 100))
     }
   })
 
@@ -100,6 +106,7 @@ function generateWater(coordinates, height = 0.2) {
 	// let buildingHoles = []; //holes to punch out shape
 
 	coordinates.forEach((points, index) => {
+   // console.log('water points', points)
 		//for each building do:
 		if (index === 0) {
 			//create main building shape

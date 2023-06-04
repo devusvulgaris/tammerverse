@@ -1,4 +1,4 @@
-import {useRef} from 'react'
+import {useRef, useEffect} from 'react'
 import {
   Drawer,
   DrawerBody,
@@ -15,6 +15,12 @@ import {
 export default function Info() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = useRef()
+
+  useEffect(() => {
+    return () => {
+      onClose()
+    }
+  }, [])
 
   return (
     <>

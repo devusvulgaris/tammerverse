@@ -14,6 +14,8 @@ import Parks from '@/components/map/parks'
 import Buildings from '@/components/map/buildings'
 import Railways from '@/components/map/railways'
 import Roads from '@/components/map/roads'
+import Outotec from '@/components/map/outotec'
+import {InfoModal} from '@/components/map/info'
 
 type Props = {
   children: ReactNode
@@ -134,6 +136,8 @@ const Map = () => {
   // console.log('my shape', shape)
 
   return (
+    <>
+    <InfoModal />
       <Canvas camera={{
         position: [-90, 0, 50],
         up: [0, 0, 10], // [0, 0, 10],
@@ -141,7 +145,6 @@ const Map = () => {
       }}>
         <Sky distance={450000} sunPosition={[0, 1, 0]} inclination={0} azimuth={0.25} />
         <primitive object={new AxesHelper(100)} />
-        <gridHelper />
         <ambientLight intensity={0.5} />
         <directionalLight color="white" position={[0, 20, 200]} castShadow />
         {/* <CameraHelper /> */}
@@ -193,6 +196,7 @@ const Map = () => {
         <Buildings />
         <Railways />
         {/* <Roads /> */}
+        <Outotec />
         <Plane />
         <MapControls
           // minPolarAngle={0}
@@ -200,6 +204,7 @@ const Map = () => {
           />
         {/* <FirstPersonControls /> */}
       </Canvas>
+      </>
   )
 }
 
